@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../imagenes/logomini.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- fila de logo + nav -->
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="list__item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="list__item">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="list__item">
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li class="list__item">
+                    <a href="./compromiso.html">Compromiso</a>
+                </li>
+                <li class="list__item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="header__images">
+            <img  class="img-nav__logo" src="../Imagenes/logo.png" alt="Logo">
+            <div id="header__social-media">
+            <a  class="img-nav__media" href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
+                <img  class="img-nav__link" src="../Imagenes/imagen-home-linkedin.png" width="50" height="50">
+            <a  class="img-nav__media" href="./contacto.html" target="_self">
+                <img class="img-nav__link" src="../Imagenes/imagen-home-tw.png" width="50" height="50">
+            </a>
+            <a  class="img-nav__media" href="https://www.facebook.com/mastinpoliuretano" target="_blank">
+                <img class="img-nav__link" src="../Imagenes/imagen-home-facebook.png" width="50" height="50">
+            </a>
+            </div>
+        </div>
+    </header>
+    <!-- cierre de fila logo + nav -->
+    
+
+    <!-- Texto descriptivo-->
+    <main id="main__contacto">
+        <section id="contacto-text">
+            <h1> 
+                CONTACTANOS
+            </h1>
+            <p>
+                PREGUNTAS, CONSULTAS, DUDAS, HABLEMOS! NOSOTROS ESCUCHAREMOS <br><br>
+                &#x1F4E9;Email: mastinsa@gmail.com.ar<br>
+                &#x1F4DE; Numero: +54 9 223 436 4538,<br>
+                &#x231A;  Lunes a viernes, de 08:30 a 16:30⠀<br>
+                &#x231A; Sábados, de 08:00 a 13:30⠀<br>
+            </p>
+        </section>
+    <!-- formulario de contacto -->
+        <section id="contacto-form">
+            <form   action="" method="get" enctype="" target="_self" autocomplete="on">
+                    <h2>Formulario</h2> 
+                    <p>Comunicate con nuestro equipo!</p>
+                    <label for="tipoMensaje">Motivo de su mensaje:</label><br>
+                    <input list="tipoMensaje" name="tipoMensaje" required><br>
+                    <datalist id="tipoMensaje">
+                        <option value="Consulta">
+                        <option value="Reclamo">
+                        <option value="Otros">
+                    </datalist>
+                    <label for="fname">Nombre:</label><br>
+                    <input type="text" id="fname" placeholder="Ej. Isabella" required><br>
+                    <label for="lname">Apellido:</label><br>
+                    <input type="text" id="lname" placeholder="Ej. Bresciani" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="aaa@gmail.com" required><br>
+                    <label for="tel">Telefono:</label><br>
+                    <input type="tel" id="tel" pattern="[0-9]{10}" placeholder="1128782663" title="numero de telefono" required><br>
+                    <label for="textarea">Mensaje:</label><br>
+                    <textarea id="textarea"></textarea><br>
+                    <div>Queres recibir info sobre nosotros?
+                        <input type="checkbox" value="1">
+                    </div><br>
+                    <button  class="button" type="reset">
+                        Resetiar formulario
+                    </button>
+                    <butto class="button" type="submit">
+                        Enviar
+                    </button>
+            </form>
+        </section>
+        
+    </main>
+
+    <!-- Cierre formulario de contacto -->
+
+    <!-- inicio de footer -->
+    <section class="section-footer">
+        <footer>  
+            <div id="footer__item1"><h3>CONTACTO</h3></div>
+            <div id="footer__item2"><h3>ENCONTRANOS EN</h3></div>
+            <div id="footer__item3">
+                <a href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
+                    <img src="../Imagenes/imagen-home-linkedin-footer.png" width="50" height="50">
+                </a>
+            </div>
+            <div id="footer__item4">
+                <a href="./contacto.html" target="_self">
+                    <img src="../Imagenes/imagen-home-tw-footer.png" width="50" height="50">
+                </a>
+            </div>
+            <div id="footer__item5">
+                <a href="https://www.facebook.com/mastinpoliuretano" target="_blank">
+                    <img src="../Imagenes/imagen-home-facebook-footer.png" width="50" height="50">
+                </a>
+            </div>
+            </div>
+            <div id="footer__item6">
+                <p>
+                    Vergara y Calle 24, Berazategui <br>
+                    <b>Mini Parque Industrial Vergara</b>
+                </p>
+            </div>
+        </footer>  
+    </section>   
+    <!-- cierre de footer -->
+</body>
+</html>
