@@ -107,9 +107,7 @@ nav .list__item a{
 }
 
 #svg-aplicaciones{ 
-    fill: #50c6db;
-    
-    
+    fill: #50c6db; 
 }
 
 @keyframes lupa {
