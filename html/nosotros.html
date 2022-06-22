@@ -6,136 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="../imagenes/logomini.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- fila logo + nav -->
     <header>
+        <div class="navegador">
+            <nav class="navbar background navbar-expand-lg navbar-dark bg-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item ">
+                    <a class="nav-link navbar-brand btn btn-sm btn-outline-secondary" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  active">
+                    <a class="nav-link active navbar-brand btn btn-outline-success" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link navbar-brand btn btn-sm btn-outline-secondary" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-brand btn btn-sm btn-outline-secondary" href="compromiso.html">Compromiso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand btn btn-sm btn-outline-secondary" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header__images" >
+            <img class="header__logo animate__pulse" src="../Imagenes/logo.png" alt="Logo">
+            <div id="header__social-media">
+                <a  class="img-nav__media" href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
+                    <img  class="img-nav__link" src="../Imagenes/imagen-home-linkedin.png" width="20px" height="20px">
+                <a  class="img-nav__media" href="./contacto.html" target="_self">
+                    <img class="img-nav__link" src="../Imagenes/imagen-home-tw.png" width="20px" height="20px">
+                </a>
+                <a  class="img-nav__media" href="https://www.facebook.com/mastinpoliuretano" target="_blank">
+                    <img class="img-nav__link" src="../Imagenes/imagen-home-facebook.png" width="20px" height="20px">
         
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="list__item">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="list__item">
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="list__item">
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li class="list__item">
-                    <a href="./compromiso.html">Compromiso</a>
-                </li>
-                <li class="list__item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <img  class="img-nav__logo" src="../Imagenes/logo.png" alt="Logo">
-            <a  href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
-                <img  class="img-nav__link" src="../Imagenes/imagen-home-linkedin.png" width="50" height="50">
-            <a  href="./contacto.html" target="_self">
-                <img class="img-nav__link" src="../Imagenes/imagen-home-tw.png" width="50" height="50">
-            </a>
-            <a  href="https://www.facebook.com/mastinpoliuretano" target="_blank">
-                <img class="img-nav__link" src="../Imagenes/imagen-home-facebook.png" width="50" height="50">
-            </a>
+                </a>
+            </div>
         </div>
     </header>
     <!-- cierre de fila logo + nav -->
     <!--Imagenes nosotros-->
-    <section >
-        <img src="../Imagenes/imagen-nosotros-1.png" width="500">
-        <img src="../Imagenes/imagen-nosotros-2.png" width="700">
-        <img src="../Imagenes/imagen-nosotros-3.png" width="400">
-        <img src="../Imagenes/imagen-nosotros-4.png" width="450">
-        <img src="../Imagenes/imagen-nosotros-5.png" width="400">
-    </section>
-    <!-- Cierre Imagenes nosotros-->
-    <!--Texto Introductorio y video presentacion-->
-    <section >
-        <article class="article">
-        <h1 class="article__title">Un poco sobre nosotros...</h1>
-            <p class="article__text">
-                Registrada en Julio de 1973 por Francisco Maio como Mas-Tin S.A. en Buenos Aires-Argentina, la empresa operaba desde 1964 como Plásticos MAS.<br><br>
+    <main class="main--nosotros">
+        <section  class="main--nosotros-img">
+            <picture><img id="picture1" src="../Imagenes/imagen-nosotros-1.png" width="500"></picture>
+            <picture><img id="picture2" src="../Imagenes/imagen-nosotros-2.png" width="700"></picture>
+            <picture><img id="picture3" src="../Imagenes/imagen-nosotros-3.png" width="400"></picture>
+            <picture><img id="picture4" src="../Imagenes/imagen-nosotros-4.png" width="450"></picture>
+            <picture><img id="picture5" src="../Imagenes/imagen-nosotros-5.png" width="400"></picture>
+  
+        </section>
+        <!-- Cierre Imagenes nosotros-->
+        <!--Texto Introductorio y video presentacion-->
+        <section class="main--nosotros-text">
+            <article class="article">
+            <h1 class="article__title">Un poco sobre nosotros...</h1>
+                <p class="article__text">
+                    Registrada en Julio de 1973 por Francisco Maio como Mas-Tin S.A. en Buenos Aires-Argentina, la empresa operaba desde 1964 como Plásticos MAS.<br><br>
 
-                Habiendo comenzado como una industria fabricante de productos químicos específicamente focalizada en el mercado de adhesivos y selladores a nivel local, en pocos años sería reconocida internacionalmente por la alta calidad de sus productos, cualidad que hasta el día de hoy se mantiene, y que es uno de los pilares de la compañía junto al respeto por nuestros colaboradores, proveedores y clientes, siempre cuidando el medio ambiente.<br><br>
-                
-                Con los años, mas-tin se convirtió en una marca reconocida y comenzó a ser tratada como tal. En la actualidad, y presente en más de doce países, la marca mas-tin y todas sus sub-marcas son sinónimo de innovación tecnológica focalizada en crear soluciones inteligentes para una gran variedad de mercados y segmentos.<br><br>
-                
-                Contando con dos plantas productivas en Latinoamérica, y operaciones de distribución y oficinas de representación propias en siete países de la región, mas-tin cuenta con profesionales altamente calificados y un gran portafolio de productos ajustados a la medida de su necesidad, creando así la solución que usted necesita.<br><br>
-                
-                Lo invitamos a conocer el mundo mas-tin, un mundo de soluciones
-            </p>
-        </article>
-        <article>
-            <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Una pyme familiar desarrolló esta planta modelo para la fabricación de poliuretano con procesos más sustentables y un crecimiento del 300% en su productividad.<br>MAS-TIN es un cliente de BICE que fabrica este químico clave en colchones, materiales para la construcción y heladeras. <a href="https://t.co/FMQ2Og7fxN">pic.twitter.com/FMQ2Og7fxN</a></p>&mdash; BICE (@bice_arg) <a href="https://twitter.com/bice_arg/status/1519400955611172865?ref_src=twsrc%5Etfw">April 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </article>
-    </section>
+                    Habiendo comenzado como una industria fabricante de productos químicos específicamente focalizada en el mercado de adhesivos y selladores a nivel local, en pocos años sería reconocida internacionalmente por la alta calidad de sus productos, cualidad que hasta el día de hoy se mantiene, y que es uno de los pilares de la compañía junto al respeto por nuestros colaboradores, proveedores y clientes, siempre cuidando el medio ambiente.<br><br>
+                    
+                    Con los años, mas-tin se convirtió en una marca reconocida y comenzó a ser tratada como tal. En la actualidad, y presente en más de doce países, la marca mas-tin y todas sus sub-marcas son sinónimo de innovación tecnológica focalizada en crear soluciones inteligentes para una gran variedad de mercados y segmentos.<br><br>
+                    
+                    Contando con dos plantas productivas en Latinoamérica, y operaciones de distribución y oficinas de representación propias en siete países de la región, mas-tin cuenta con profesionales altamente calificados y un gran portafolio de productos ajustados a la medida de su necesidad, creando así la solución que usted necesita.<br><br>
+                    
+                    Lo invitamos a conocer el mundo mas-tin, un mundo de soluciones
+                </p>
+            </article>
+        </section>
+    </main>
     <!-- Ubicacion -->
-    <section class="ubicacion--nosotros">
-        <h2>
-            Donde nos encontramos?
-        </h2>
-        <table class="ubicacion--nosotros__table" border="1">
-            <tr>
-                <th> 
-                    <h4> Nuestra Ubicacion Actual:</h4>
-                </th>
-                <th> 
-                    <h4> Entrada al parque industrial</h4>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11022.044763248143!2d-58.2217769953365!3d-34.78395940905705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328c521f03719%3A0xa14649dc34bcd400!2sMas-Tin%20SA!5e0!3m2!1ses-419!2sar!4v1652649729667!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </td>
-                <td>
-                    <img src="../Imagenes/parqueIndustrial.png" width="600" height="450" alt="Imagen Parque Industrial">
-                </td>
-            </tr>
-        </table>
-    <h4>Vergara y Calle 24, Berazategui, Buenos Aires, Argentina - Mini Parque Industrial Vergara</h4>
+    <h2>
+        Donde nos encontramos?
+    </h2>
+    <section class="ubicacion--nosotros container justify-content-center">
+        
+        <section class="ubicacion--nosotros__table" >
+            <div class="ubicacion--nosotros__item">
+                <h4> Nuestra Ubicacion Actual:</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11022.044763248143!2d-58.2217769953365!3d-34.78395940905705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a328c521f03719%3A0xa14649dc34bcd400!2sMas-Tin%20SA!5e0!3m2!1ses-419!2sar!4v1652649729667!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+            <div class="ubicacion--nosotros__item">
+                <h4> Entrada al parque industrial</h4>   
+                <img src="../Imagenes/parqueIndustrial.png" width="600" height="450" alt="Imagen Parque Industrial">
+            </div>
+         </section>
     </section>
+    <h4>Vergara y Calle 24, Berazategui, Buenos Aires, Argentina - Mini Parque Industrial Vergara</h4>
     <!-- Ubicacion -->
     <!-- inicio de footer -->
-    <footer class="footer">
-        <table width="100%">
-            <tr>
-                <th colspan="3">    
-                    CONTACTO
-                </th>
-                <th>    
-                    ENCONTRANOS EN
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
-                        <img src="../Imagenes/linkedin.png" width="50" height="50">
-                    </a>
-                </td>
-                <td>
-                    <a href="./contacto.html" target="_self">
-                        <img src="../Imagenes/mail.png" width="50" height="50">
-                    </a>
-                </td>
-                <td>
-                    <a href="https://www.facebook.com/mastinpoliuretano" target="_blank">
-                        <img src="../Imagenes/facebook.png" width="50" height="50">
-                    </a>
-                </td>
-                <td>
-                    <p>
-                        Vergara y Calle 24, Berazategui <br>
-                        <b>Mini Parque Industrial Vergara</b>
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </footer> 
+    <section class="section-footer">
+        <footer>  
+            <div id="footer__item1"><h3>CONTACTO</h3></div>
+            <div id="footer__item2"><h3>ENCONTRANOS EN</h3></div>
+            <div id="footer__item3">
+                <a href="https://www.linkedin.com/company/mas-tin-s-a-/posts/?feedView=all" target="_blank">
+                    <img src="../Imagenes/imagen-home-linkedin-footer.png" width="50" height="50">
+                </a>
+            </div>
+            <div id="footer__item4">
+                <a href="./contacto.html" target="_self">
+                    <img src="../Imagenes/imagen-home-tw-footer.png" width="50" height="50">
+                </a>
+            </div>
+            <div id="footer__item5">
+                <a href="https://www.facebook.com/mastinpoliuretano" target="_blank">
+                    <img src="../Imagenes/imagen-home-facebook-footer.png" width="50" height="50">
+                </a>
+            </div>
+            </div>
+            <div id="footer__item6">
+                <p>
+                    Vergara y Calle 24, Berazategui <br>
+                    <b>Mini Parque Industrial Vergara</b>
+                </p>
+            </div>
+        </footer>  
+    </section>    
     <!-- cierre de footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </body>
