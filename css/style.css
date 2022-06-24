@@ -354,7 +354,7 @@ nav .list__item a{
     display: flex;
     flex-direction: row;
     max-width: 1800px;
-    background-images: red;
+    background-image: red;
     justify-content: space-around;
     align-items: center;
     padding: 6%;
@@ -909,10 +909,3 @@ footer div a img{
     margin: 2% 0px;
 }
 
-@media screen (max-width:992px){
-    .ubicacion--nosotros__item{
-        display: flex;
-        flex-direction: row;
-    }
-      
-}
