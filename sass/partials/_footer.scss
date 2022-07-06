@@ -1,0 +1,42 @@
+/*Section: footer*/
+.section-footer{
+    @include flex-center;
+    background-color: $backround-header;
+    footer{
+        background-color: $backround-header;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr 2fr;
+        grid-template-rows: repeat(1fr,2);
+        padding: 1% 15%;
+        color: $white;
+        justify-content:center;
+        justify-items: center;
+        align-items: center;
+        width:100%;
+        row-gap: 50px;
+        column-gap: 100px;
+        font-size: 0.8em;
+        & div a img{
+            width: 3em;
+            height: auto;
+        }
+        #footer__item1{
+            @include gridPosition(1,3,1,2);
+        }
+        #footer__item2{
+            @include gridPosition(4,6,1,2); 
+        }
+        #footer__item3{
+            @include gridPosition(1,2,2,3);
+        }
+        @for $i from 2 to 5 {
+            #footer__item#{$i+2}{
+                @include gridPosition($i,$i+1, 2,3);
+            }
+        }
+        
+    }
+}
+
+
+/*Section: footer*/

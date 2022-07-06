@@ -1,7 +1,17 @@
+
 @mixin flex-row-center{
     display:flex;
     flex-direction:row;
     justify-content:center;
+}
+
+@mixin flex-center{
+    display:flex;
+    justify-content:center;
+}
+@mixin flex-end{
+    display:flex;
+    justify-content:end;
 }
 
 @mixin flex-row-space-around{
@@ -9,3 +19,21 @@
     flex-direction:row;
     justify-content:space-around;
 }
+
+@mixin flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+@mixin gridPosition($column-start,$column-end, $row-start,$row-end) {
+    grid-column-start: $column-start;
+    grid-column-end: $column-end;
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+ }
+ 
+ @mixin backgroundImage($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }

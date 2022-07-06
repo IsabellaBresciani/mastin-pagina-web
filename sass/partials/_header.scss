@@ -61,23 +61,40 @@ header{
             }
         }  
     }
+    #carouselExampleControls{
+        position: absolute;
+        z-index: -2;
+        justify-content: center;
+    }
     
+    .header__images{
+        position: relative;
+        top: 2vh;
+        @include flex-row-center;
+        margin: 5vw 0px 5vw;
+        flex-wrap: wrap;
+        gap: 10%;  
+        &__logo{
+            margin-bottom: 2vw;
+        }
+        &__social-media{
+            position: relative;
+            @include flex-row-space-around;
+            margin: 2vw 0px;   
+            gap: 2em;
+            &__img{
+                @include flex-center;
+                align-items: center;
+                .img__link{
+                    width: 3em;
+                    height: auto;
+                    transition: all 1s;
+                    &:hover{
+                        transform:scale(1.2);
+                    }
+                }
+            }
+        } 
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*nav*/
