@@ -1,0 +1,44 @@
+#main__contacto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    align-items: center;
+    justify-content: stretch;
+    background: $degrade-ligth-blue;
+
+    #contacto-text {
+        color: $blue;
+        font-size: 1em;
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    form {
+        @include backgroundImage("https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        @include flex-column;
+        text-align: center;
+        padding: 6%;
+        margin: 2%;
+        box-shadow: $shadow;
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    #main__contacto {
+        width: 100%;
+        @include flex-column;
+        padding: 5%;
+        align-items: center;
+        background-color: $ligth-blue;
+
+    }
+
+    #contacto-form {
+        width: 100%;
+        margin: 10% 0;
+    }
+}

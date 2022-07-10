@@ -1,11 +1,11 @@
 {
   "name": "mastin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina WEB mastin SA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css ", 
+    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css ",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/IsabellaBresciani/mastin-pagina-web.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Isabella",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IsabellaBresciani/mastin-pagina-web/issues"
@@ -21,6 +21,9 @@
   "homepage": "https://github.com/IsabellaBresciani/mastin-pagina-web#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

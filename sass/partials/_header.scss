@@ -1,18 +1,32 @@
 /*nav*/
-header{
-    .navegador{
+header {
+    padding-top: 0.25rem;
+    z-index: 30;
+
+    .navegador {
         background-color: $backround-header;
+        z-index: 30;
+
+
         .bg-dark {
-            background-color: $backround-header!important;
+            background-color: $backround-header  !important;
+            z-index: 30;
         }
 
-        .background{
-            background-color: $backround-header;
+        .background {
+            background: linear-gradient($backround-header, rgb(249, 50, 50));
             color: #f9fffb;
             padding: 3vh;
             gap: 10vw;
+            z-index: 30;
         }
-        nav{
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            z-index: 30;
+
             .navbar-toggler {
                 padding: 0.25rem 0.75rem;
                 font-size: 1.25rem;
@@ -21,80 +35,104 @@ header{
                 border: 1px solid $white;
                 border-radius: 0.25rem;
             }
+
             .navbar-dark .navbar-toggler {
                 color: $white;
                 border-color: $white;
             }
-            .nav-item{
-                a{
+
+            .nav-item {
+                a {
                     text-decoration: none;
-                    color: $white; 
+                    color: $white;
                 }
+
                 .btn-outline-secondary {
                     color: $white;
                     background-color: transparent;
                     background-image: none;
-                    border-color: #ffffff00!important;
-                    
+                    border-color: #ffffff00 !important;
+
                     &:hover {
                         color: $white;
                         background-color: rgb(0, 26, 112);
                     }
                 }
+
                 .btn-outline-success {
                     color: #f9fffb;
                     background-color: transparent;
                     background-image: none;
                     border-color: $white;
                 }
-    
-                .btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+
+                .btn-outline-secondary:not(:disabled):not(.disabled).active,
+                .btn-outline-secondary:not(:disabled):not(.disabled):active,
+                .show>.btn-outline-secondary.dropdown-toggle {
                     color: $backround-header;
                     background-color: $white;
                     border-color: $white;
                 }
-                .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+
+                .btn-outline-success:not(:disabled):not(.disabled).active,
+                .btn-outline-success:not(:disabled):not(.disabled):active,
+                .show>.btn-outline-success.dropdown-toggle {
                     color: $backround-header;
                     background-color: $white;
                     border-color: $white;
                 }
             }
-        }  
+        }
     }
-    #carouselExampleControls{
+
+    #carouselExampleControls {
         position: absolute;
         z-index: -2;
         justify-content: center;
+
+        .carousel-inner {
+            max-height: 600px;
+
+            .carousel-item img {
+                background-position: bottom bottom;
+            }
+        }
     }
-    
-    .header__images{
+
+    .header__images {
         position: relative;
         top: 2vh;
         @include flex-row-center;
-        margin: 5vw 0px 5vw;
+        padding: 20vh 0px 5vw;
         flex-wrap: wrap;
-        gap: 10%;  
-        &__logo{
+        gap: 10%;
+
+        &__logo {
             margin-bottom: 2vw;
+            z-index: 10;
         }
-        &__social-media{
+
+        &__social-media {
             position: relative;
             @include flex-row-space-around;
-            margin: 2vw 0px;   
+            margin: 2vw 0px;
             gap: 2em;
-            &__img{
+
+            &__img {
                 @include flex-center;
                 align-items: center;
-                .img__link{
+                z-index: 10;
+
+                .img__link {
                     width: 3em;
                     height: auto;
                     transition: all 1s;
-                    &:hover{
-                        transform:scale(1.2);
+
+                    &:hover {
+                        transform: scale(1.2);
                     }
                 }
             }
-        } 
+        }
     }
 }
-
