@@ -92,7 +92,6 @@ header {
 
         .carousel-inner {
             max-height: 600px;
-
             .carousel-item img {
                 background-position: bottom bottom;
             }
@@ -101,15 +100,18 @@ header {
 
     .header__images {
         position: relative;
-        top: 2vh;
+        top: 1vh;
         @include flex-row-center;
-        padding: 20vh 0px 5vw;
+        padding: 9em 0px 5vw;
         flex-wrap: wrap;
         gap: 10%;
 
         &__logo {
             margin-bottom: 2vw;
             z-index: 10;
+            @include size(auto,55vw);
+            max-width: 500px;
+            min-width: 280px;
         }
 
         &__social-media {
@@ -127,6 +129,9 @@ header {
                     width: 3em;
                     height: auto;
                     transition: all 1s;
+                    @include size(auto,7vw);
+                    max-width: 65px;
+                    min-width: 40px;
 
                     &:hover {
                         transform: scale(1.2);

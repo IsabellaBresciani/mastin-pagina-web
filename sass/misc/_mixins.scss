@@ -25,9 +25,20 @@
     flex-direction:column;
 }
 
+@mixin flex-column-space-arround{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
 @mixin gridPosition($column-start,$column-end, $row-start,$row-end) {
     grid-column-start: $column-start;
     grid-column-end: $column-end;
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+ }
+
+ @mixin grid-row-Position($row-start,$row-end) {
     grid-row-start: $row-start;
     grid-row-end: $row-end;
  }
@@ -37,3 +48,7 @@
     background-repeat: no-repeat;
     background-size: cover;
  }
+ @mixin size($heigh,$width){
+    height: $heigh;
+    width: $width;
+}
