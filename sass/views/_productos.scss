@@ -1,0 +1,20 @@
+.main--productos {
+    background: $degrade-ligth-blue;
+
+    .card-group {
+        gap: $gap;
+
+
+        .card {
+            min-width: 280px;
+            margin: $gap;
+            color: $blue;
+            background-color: rgba(255, 255, 255, 0.517);
+            border-style: none;
+
+            .card-img-top {
+                padding: $gap;
+            }
+        }
+    }
+}

@@ -120,11 +120,11 @@ header {
   font-size: 0.8em; }
   .section-footer footer {
     background-color: #e80000;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 3fr 2fr;
     grid-template-rows: repeat(1fr, 2);
     padding: 1% 15%;
-    color: white;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -135,6 +135,7 @@ header {
       width: 3em;
       height: auto; }
     .section-footer footer #footer__item1 {
+      color: white;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -165,7 +166,7 @@ header {
       grid-row-start: 2;
       grid-row-end: 3; }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 635px) {
   .section-footer {
     display: flex;
     flex-direction: column;
@@ -176,6 +177,8 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
       color: white;
       width: 100%;
       font-size: 0.6em;
@@ -441,29 +444,33 @@ header {
   justify-content: space-around;
   margin: 3% 0%;
   gap: 3%; }
-  .main--nosotros .main--nosotros-text {
+  .main--nosotros-text {
     background-color: #e80000;
     color: white;
-    padding: 7%;
+    padding: 6%;
     max-width: 800px;
-    font-size: 1em; }
-  .main--nosotros .main--nosotros-img {
+    font-size: 0.9em; }
+    .main--nosotros-text .article__title {
+      font-size: 3em;
+      margin: 0.5em;
+      padding-bottom: 7%; }
+  .main--nosotros-img {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .main--nosotros .main--nosotros-img #picture1 img {
+    .main--nosotros-img #picture1 {
       width: 30vw;
       margin: 2% 0px; }
-    .main--nosotros .main--nosotros-img #picture2 img {
+    .main--nosotros-img #picture2 {
       width: 40vw;
       margin: 2% 0px; }
-    .main--nosotros .main--nosotros-img #picture3 img {
+    .main--nosotros-img #picture3 {
       width: 30vw;
       margin: 2% 0px; }
-    .main--nosotros .main--nosotros-img #picture4 img {
+    .main--nosotros-img #picture4 {
       width: 32vw;
-      margin: 4% 0px; }
-    .main--nosotros .main--nosotros-img #picture5 img {
+      margin: 2% 0px; }
+    .main--nosotros-img #picture5 {
       width: 35vw;
       margin: 2% 0px; }
 
@@ -486,12 +493,16 @@ h2 {
       flex-direction: column; }
       .ubicacion--nosotros .ubicacion--nosotros__table .ubicacion--nosotros__item img {
         height: 10em;
-        width: 15em; }
+        width: 15em;
+        min-width: 280px;
+        min-height: 200px; }
       .ubicacion--nosotros .ubicacion--nosotros__table .ubicacion--nosotros__item iframe {
         height: 10em;
-        width: 15em; }
+        width: 15em;
+        min-width: 280px;
+        min-height: 200px; }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 700px) {
   .main--nosotros {
     margin: 3% 0%;
     gap: 15%;
@@ -503,38 +514,70 @@ h2 {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       height: fit-content;
       justify-content: stretch;
-      align-content: stretch;
-      justify-items: stretch;
-      justify-content: center;
+      align-content: center;
       padding: 4%; }
       .main--nosotros .main--nosotros-img #picture1 {
         grid-row-start: 1;
         grid-row-end: 2;
-        width: 100%; }
+        height: 30vw;
+        width: 80vw;
+        max-width: 400px;
+        max-height: 140px;
+        padding: 3%; }
       .main--nosotros .main--nosotros-img #picture2 {
         grid-row-start: 2;
         grid-row-end: 3;
+        height: 30vw;
+        width: 85vw;
         justify-self: end;
-        width: 100%;
-        display: block; }
+        max-width: 500px;
+        max-height: 150px;
+        padding: 3%; }
       .main--nosotros .main--nosotros-img #picture3 {
         grid-row-start: 3;
         grid-row-end: 4;
-        width: 100%; }
+        height: 30vw;
+        width: 80vw;
+        max-width: 400px;
+        max-height: 140px;
+        padding: 3%; }
       .main--nosotros .main--nosotros-img #picture4 {
         grid-row-start: 4;
         grid-row-end: 5;
+        height: 30vw;
+        width: 85vw;
         justify-self: end;
-        width: 100%;
-        display: block; }
+        max-width: 500px;
+        max-height: 150px;
+        padding: 3%; }
       .main--nosotros .main--nosotros-img #picture5 {
         grid-row-start: 5;
         grid-row-end: 6;
-        width: 100%; }
+        height: 30vw;
+        width: 80vw;
+        max-width: 400px;
+        max-height: 140px;
+        padding: 3%; }
   .ubicacion--nosotros .ubicacion--nosotros__table {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3%;
-    margin: 3% 0%; } }
+    margin: 3% 0%; }
+    .ubicacion--nosotros .ubicacion--nosotros__table .ubicacion--nosotros__item {
+      justify-content: center;
+      align-items: center; } }
+
+.main--productos {
+  background: linear-gradient(#fefefe, #b1d3ff); }
+  .main--productos .card-group {
+    gap: 3%; }
+    .main--productos .card-group .card {
+      min-width: 280px;
+      margin: 3%;
+      color: #153866;
+      background-color: rgba(255, 255, 255, 0.517);
+      border-style: none; }
+      .main--productos .card-group .card .card-img-top {
+        padding: 3%; }

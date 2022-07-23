@@ -1,113 +1,135 @@
-
-
 .main--nosotros {
     @include flex-row-space-around;
     margin: $gap 0%;
     gap: $gap;
-    
-    .main--nosotros-text {
+
+    &-text {
         background-color: $backround-header;
         color: $white;
-        padding: 7%;
+        padding: 6%;
         max-width: 800px;
-        font-size: 1em;
+        font-size: 0.9em;
+
+        .article__title {
+            font-size: 3em;
+            margin: 0.5em;
+            padding-bottom: 7%;
+        }
     }
-    .main--nosotros-img {
+
+    &-img {
         @include flex-column;
         justify-content: space-between;
-        #picture1 img{
-            width: 30vw;
-            margin: 2% 0px;
-        }
-        
-        #picture2 img{
-            width: 40vw;
-            margin: 2% 0px;
-        }
-        
-        #picture3 img{
-            width: 30vw;
-            margin: 2% 0px;
-        }
-        
-        #picture4 img{
-            width: 32vw;
-            margin: 4% 0px;
-        }
-        
-        #picture5 img{
-            width: 35vw;
-            margin: 2% 0px;
+
+        @for $i from 1 through 5 {}
+
+        $pictures: (
+            1:30vw,
+            2:40vw,
+            3:30vw,
+            4:32vw,
+            5:35vw,
+        );
+
+    @each $pic,
+    $size in $pictures {
+        #picture#{$pic} {
+            @include pictureWidth($size);
         }
     }
 }
+}
 
 
-h2{ 
+h2 {
     color: $backround-header;
     text-align: center;
     font-weight: bolder;
 }
-.ubicacion--nosotros{
+
+.ubicacion--nosotros {
     color: $backround-header;
     font-size: $title;
     margin: 30px;
+
     .ubicacion--nosotros__table {
         @include flex-row-center;
         gap: $gap;
+
         .ubicacion--nosotros__item {
             @include flex-column;
-            @each $var in img,iframe{
-                #{$var}{
-                    @include size(10em,15em);
-                } 
+
+            @each $var in img,
+            iframe {
+                #{$var} {
+                    @include size(10em, 15em);
+                    min-width: 280px;
+                    min-height: 200px;
+                }
             }
         }
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:700px) {
 
     .main--nosotros {
         margin: $gap 0%;
         gap: $gap*5;
         @include flex-column;
         justify-content: center;
+
         .main--nosotros-img {
-            display:grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             height: fit-content;
             justify-content: stretch;
-            align-content: stretch;
-            justify-items: stretch;
-            
-            @for $i from 1 through 5{
-                @if $i % 2 == 0{
-                    #picture#{$i}{
-                        @include grid-row-Position($i,$i+1);
+            align-content: center;
+
+
+            @for $i from 1 through 5 {
+                @if $i % 2==0 {
+                    #picture#{$i} {
+                        @include grid-row-Position($i, $i+1);
+                        @include size(30vw, 85vw);
                         justify-self: end;
-                        width: 100%;
-                        display: block;
+                        max-width: 500px;
+                        max-height: 150px;
+                        padding: $gap;
+
+
                     }
-                }@else{
-                    #picture#{$i}{
-                        @include grid-row-Position($i,$i+1);
-                        width: 100%;
+                }
+
+                @else {
+                    #picture#{$i} {
+                        @include grid-row-Position($i, $i+1);
+                        @include size(30vw, 80vw);
+                        max-width: 400px;
+                        max-height: 140px;
+                        padding: $gap;
                     }
                 }
             }
-            
-            justify-content: center;
+
+
             padding: 4%;
         }
     }
-    .ubicacion--nosotros{
+
+    .ubicacion--nosotros {
         .ubicacion--nosotros__table {
             @include flex-column;
             justify-content: center;
             align-items: center;
             gap: $gap;
             margin: $gap 0%;
+
+            .ubicacion--nosotros__item {
+                justify-content: center;
+                align-items: center;
+            }
+
         }
     }
 

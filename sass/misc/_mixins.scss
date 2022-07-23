@@ -1,54 +1,60 @@
-
-@mixin flex-row-center{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-@mixin flex-center{
-    display:flex;
-    justify-content:center;
-}
-@mixin flex-end{
-    display:flex;
-    justify-content:end;
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
 }
 
-@mixin flex-row-space-around{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+@mixin flex-end {
+    display: flex;
+    justify-content: end;
 }
 
-@mixin flex-column{
-    display:flex;
-    flex-direction:column;
+@mixin flex-row-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-@mixin flex-column-space-arround{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
-@mixin gridPosition($column-start,$column-end, $row-start,$row-end) {
+@mixin flex-column-space-arround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@mixin gridPosition($column-start, $column-end, $row-start, $row-end) {
     grid-column-start: $column-start;
     grid-column-end: $column-end;
     grid-row-start: $row-start;
     grid-row-end: $row-end;
- }
+}
 
- @mixin grid-row-Position($row-start,$row-end) {
+@mixin grid-row-Position($row-start, $row-end) {
     grid-row-start: $row-start;
     grid-row-end: $row-end;
- }
- 
- @mixin backgroundImage($url) {
+}
+
+@mixin backgroundImage($url) {
     background-image: url($url);
     background-repeat: no-repeat;
     background-size: cover;
- }
- @mixin size($heigh,$width){
+}
+
+@mixin size($heigh, $width) {
     height: $heigh;
     width: $width;
+}
+
+@mixin pictureWidth($width) {
+    width: $width;
+    margin: 2% 0px;
 }

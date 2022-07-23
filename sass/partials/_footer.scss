@@ -1,58 +1,67 @@
 /*Section: footer*/
-.section-footer{
+.section-footer {
     @include flex-center;
     background-color: $backround-header;
     font-size: 0.8em;
-    footer{
+
+    footer {
         background-color: $backround-header;
+        color: $white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 3fr 2fr;
-        grid-template-rows: repeat(1fr,2);
+        grid-template-rows: repeat(1fr, 2);
         padding: 1% 15%;
-        color: $white;
-        justify-content:center;
+        justify-content: center;
         justify-items: center;
         align-items: center;
-        width:100%;
+        width: 100%;
         row-gap: 50px;
         column-gap: 100px;
-        
-        & div a img{
+
+        & div a img {
             width: 3em;
             height: auto;
         }
-        #footer__item1{
-            @include gridPosition(1,3,1,2);
+
+        #footer__item1 {
+            color: white;
+            @include gridPosition(1, 3, 1, 2);
         }
-        #footer__item2{
-            @include gridPosition(4,6,1,2); 
+
+        #footer__item2 {
+            @include gridPosition(4, 6, 1, 2);
         }
-        #footer__item3{
-            @include gridPosition(1,2,2,3);
+
+        #footer__item3 {
+            @include gridPosition(1, 2, 2, 3);
         }
+
         @for $i from 2 to 5 {
-            #footer__item#{$i+2}{
-                @include gridPosition($i,$i+1, 2,3);
+            #footer__item#{$i+2} {
+                @include gridPosition($i, $i+1, 2, 3);
             }
         }
-        
+
     }
 }
 
-@media screen and (max-width:769px) {
-    .section-footer{
+@media screen and (max-width:635px) {
+    .section-footer {
         @include flex-column;
         color: white;
         text-align: center;
+
         footer {
             background-color: $backround-header;
             @include flex-row-center;
+            justify-content: center;
+            flex-wrap: wrap;
             color: white;
             width: 100%;
             font-size: 0.6em;
             padding: 7%;
         }
-    
+
         footer div a img {
             width: 3em;
             height: auto;
@@ -61,13 +70,13 @@
         #footer__item2 {
             display: none;
         }
-    
+
         #footer__item6 {
             display: none;
         }
     }
 }
-    
+
 
 
 /*Section: footer*/
